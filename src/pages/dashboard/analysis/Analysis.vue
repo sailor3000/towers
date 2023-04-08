@@ -140,29 +140,29 @@
           </a-timeline> -->
           <a-timeline mode="alternate">
             <a-timeline-item>……</a-timeline-item>
-            <a-timeline-item color="green">2440年，罪责研究中心实验室病毒泄露，造成蚊虫感染，被叮咬的人类会在短时间内死于器官衰竭，幸存者中出现了最初的分化，人们称这些人为“哨兵”和“向导”，罪责研究中心如同过街老鼠，人人喊打。</a-timeline-item>
-            <a-timeline-item color="pink">
+            <a-timeline-item>2440年，罪责研究中心实验室病毒泄露，造成蚊虫感染，被叮咬的人类会在短时间内死于器官衰竭，幸存者中出现了最初的分化，人们称这些人为“哨兵”和“向导”，罪责研究中心如同过街老鼠，人人喊打。</a-timeline-item>
+            <a-timeline-item>
               <!-- <template #dot><ClockCircleOutlined style="font-size: 16px" /></template> -->
               2443年，北非地区发武装冲突，同年，黄石火山再次喷发，天灾人祸并起，伤亡惨重。
             </a-timeline-item>
-            <a-timeline-item color="red">2444年，北半球的冬季没有如约而至，地表高温炎热，人们死于酷暑。</a-timeline-item>
-            <a-timeline-item color="black">2450年，核武器被再次大规模用于战争之中，多地被污染后寸草不生，患辐射病的病人数激增，新生儿存活率堪忧。</a-timeline-item>
+            <a-timeline-item>2444年，北半球的冬季没有如约而至，地表高温炎热，人们死于酷暑。</a-timeline-item>
+            <a-timeline-item>2450年，核武器被再次大规模用于战争之中，多地被污染后寸草不生，患辐射病的病人数激增，新生儿存活率堪忧。</a-timeline-item>
             <a-timeline-item>
               <!-- <template #dot><ClockCircleOutlined style="font-size: 16px" /></template> -->
               2455年，人类力量仿佛无力再战，为了生存集中统一，为了延续后代，他们修建小型地下城与深入底下的升降机“巴比尔”。
             </a-timeline-item>
-            <a-timeline-item color="green">2460年，人类陆续进入地下城生活，并不断向地表下方深挖扩建。开发地下城的艰难过程中，哨兵和向导们崭露头角，而管理这些特殊个体的机构“塔”的称呼初次被使用。</a-timeline-item>
-            <a-timeline-item color="pink">2475年，完成地下城第一次大扩建，开始进行地铁开发规划。</a-timeline-item>
-            <a-timeline-item color="red">2483年，地下城第一次有了“天空”。</a-timeline-item>
-            <a-timeline-item color="black">2500年，派遣第一支地表探查小队，没有回来。</a-timeline-item>
+            <a-timeline-item>2460年，人类陆续进入地下城生活，并不断向地表下方深挖扩建。开发地下城的艰难过程中，哨兵和向导们崭露头角，而管理这些特殊个体的机构“塔”的称呼初次被使用。</a-timeline-item>
+            <a-timeline-item>2475年，完成地下城第一次大扩建，开始进行地铁开发规划。</a-timeline-item>
+            <a-timeline-item>2483年，地下城第一次有了“天空”。</a-timeline-item>
+            <a-timeline-item>2500年，派遣第一支地表探查小队，没有回来。</a-timeline-item>
             <a-timeline-item>2505年，派遣第二支地表探查小队，没有回来。</a-timeline-item>
-            <a-timeline-item color="green">2510年，第三支也是最后一支地表探查小队传来覆灭前的消息，巴比尔大升降梯损坏，此后再无人去往地表。同年地铁开发基本完成。</a-timeline-item>
-            <a-timeline-item color="pink">2530年，因塔内贪腐，民众抗议游行，但被及时制止了。</a-timeline-item>
-            <a-timeline-item color="red">2575年，塔综合执行部集体离职叛逃。</a-timeline-item>
-            <a-timeline-item color="black">2576年，黑塔组织成立，一部分人响应，因此原来的“塔”也被称为“白塔”，年末，黑塔和白塔出现了地区影响力上的区分。</a-timeline-item>
+            <a-timeline-item>2510年，第三支也是最后一支地表探查小队传来覆灭前的消息，巴比尔大升降梯损坏，此后再无人去往地表。同年地铁开发基本完成。</a-timeline-item>
+            <a-timeline-item>2530年，因塔内贪腐，民众抗议游行，但被及时制止了。</a-timeline-item>
+            <a-timeline-item>2575年，塔综合执行部集体离职叛逃。</a-timeline-item>
+            <a-timeline-item>2576年，黑塔组织成立，一部分人响应，因此原来的“塔”也被称为“白塔”，年末，黑塔和白塔出现了地区影响力上的区分。</a-timeline-item>
             <a-timeline-item>……</a-timeline-item>
-            <a-timeline-item color="orange">2588-2596年，白塔所在“引领”与黑塔所在的“黯影”两个地下城区由于资源争夺、理念冲突，开始长达6年的武装冲突，双方都不承认这是战争，但冲突在靠近地表的地下城市向周边城市蔓延。两边都认为自己是正义且胜利的人。周边区域的纷争直到2599年才平息。后人称之为“浅层战争”或“浅层冲突”时期。</a-timeline-item>
-            <a-timeline-item color="green">2630年，目前时间。这是一个资本控制的小世界，数个大型公司模糊了国界和地界，双塔能在地下延续多久？</a-timeline-item>
+            <a-timeline-item>2588-2596年，白塔所在“引领”与黑塔所在的“黯影”两个地下城区由于资源争夺、理念冲突，开始长达6年的武装冲突，双方都不承认这是战争，但冲突在靠近地表的地下城市向周边城市蔓延。两边都认为自己是正义且胜利的人。周边区域的纷争直到2599年才平息。后人称之为“浅层战争”或“浅层冲突”时期。</a-timeline-item>
+            <a-timeline-item>2630年，目前时间。这是一个资本控制的小世界，数个大型公司模糊了国界和地界，双塔能在地下延续多久？</a-timeline-item>
           </a-timeline>
         </a-card>
       </a-col>

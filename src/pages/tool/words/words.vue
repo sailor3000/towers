@@ -9,81 +9,9 @@
       <a-col :span="24">
         <a-card>
           <div class="items">
-            <div class="til">2021年所有戏录</div>
-            <a-button type="primary" @click="goSearch2021" class="search">查询</a-button>
-            <div class="result">总字数为：{{ num2021 }}</div>
-          </div>
-        </a-card>
-      </a-col>
-      <a-col :span="24">
-        <a-card>
-          <div class="items">
-            <div class="til">2022年1+2月</div>
-            <a-button type="primary" @click="goSearch20220102" class="search">查询</a-button>
-            <div class="result">总字数为：{{ num20220102 }}</div>
-          </div>
-        </a-card>
-      </a-col>
-      <a-col :span="24">
-        <a-card>
-          <div class="items">
-            <div class="til">2022年3+4月</div>
-            <a-button type="primary" @click="goSearch20220304" class="search">查询</a-button>
-            <div class="result">总字数为：{{ num20220304 }}</div>
-          </div>
-        </a-card>
-      </a-col>
-      <a-col :span="24">
-        <a-card>
-          <div class="items">
-            <div class="til">2022年5+6月</div>
-            <a-button type="primary" @click="goSearch20220506" class="search">查询</a-button>
-            <div class="result">总字数为：{{ num20220506 }}</div>
-          </div>
-        </a-card>
-      </a-col>
-      <a-col :span="24">
-        <a-card>
-          <div class="items">
-            <div class="til">2022年7月</div>
-            <a-button type="primary" @click="goSearch202207" class="search">查询</a-button>
-            <div class="result">总字数为：{{ num202207 }}</div>
-          </div>
-        </a-card>
-      </a-col>
-      <a-col :span="24">
-        <a-card>
-          <div class="items">
-            <div class="til">2022年8月</div>
-            <a-button type="primary" @click="goSearch202208" class="search">查询</a-button>
-            <div class="result">总字数为：{{ num202208 }}</div>
-          </div>
-        </a-card>
-      </a-col>
-      <a-col :span="24">
-        <a-card>
-          <div class="items">
-            <div class="til">2022年9月</div>
-            <a-button type="primary" @click="goSearch202209" class="search">查询</a-button>
-            <div class="result">总字数为：{{ num202209 }}</div>
-          </div>
-        </a-card>
-      </a-col>
-      <a-col :span="24">
-        <a-card>
-          <div class="items">
-            <div class="til">2022年10月【至10.17  15:30:00】</div>
-            <a-button type="primary" @click="goSearch202210" class="search">查询</a-button>
-            <div class="result">总字数为：{{ num202210 }}</div>
-          </div>
-        </a-card>
-      </a-col>
-      <a-col :span="24">
-        <a-card>
-          <div class="items">
-            <div class="til">计算所有在页面查询的总字数</div>
-            <a-button type="primary" @click="sum" class="search">计算</a-button>
-            <div class="result">总字数为：{{ total }}</div>
+            <div class="til">截止到20230408晚22点戏录</div>
+            <a-button type="primary" @click="goSearch20230408" class="search">查询</a-button>
+            <div class="result">总字数为：{{ num20230408 }}</div>
           </div>
         </a-card>
       </a-col>
@@ -93,14 +21,14 @@
 </template>
 
 <script>
-import txt1 from './2021.txt';
-import txt2 from './2022-1+2.txt';
-import txt3 from './2022-3+4.txt';
-import txt4 from './2022-5+6.txt';
-import txt5 from './2022-7.txt';
-import txt6 from './2022-8.txt';
-import txt7 from './2022-9.txt';
-import txt8 from './2022-10.txt';
+import txt20230408 from './20230408.txt';
+// import txt2 from './2022-1+2.txt';
+// import txt3 from './2022-3+4.txt';
+// import txt4 from './2022-5+6.txt';
+// import txt5 from './2022-7.txt';
+// import txt6 from './2022-8.txt';
+// import txt7 from './2022-9.txt';
+// import txt8 from './2022-10.txt';
 
 export default {
   name: 'words',
@@ -118,18 +46,19 @@ export default {
       num202210: 0,
       loading: false,
       total: null,
+      num20230408: 0,
     }
   },
   created() {
     // setTimeout(() => this.loading = !this.loading, 1000)
   },
   methods: {
-    goSearch2021 () {
+    goSearch20230408 () {
       this.loading = true
       setTimeout(() => {
         if (this.loading == true) {
           if (this.qq != '' && this.qq != null ) {
-            this.num2021 = this.getWords(txt1)
+            this.num20230408 = this.getWords(txt20230408)
           } else {
             this.$message.error('小笨蛋，没有输入QQ号哦^ ^')
           }
@@ -138,106 +67,8 @@ export default {
         }
       }, 1000)
     },
-    goSearch20220102 () {
-      this.loading = true
-      setTimeout(() => {
-        if (this.loading == true) {
-          if (this.qq != '' && this.qq != null ) {
-            this.num20220102 = this.getWords(txt2)
-          } else {
-            this.$message.error('小笨蛋，没有输入QQ号哦^ ^')
-          }
-        } else {
-          this.$message.error('小笨蛋，不要心急，等上一个查好了再查哦^ ^')
-        }
-      },1000)
-    },
-    goSearch20220304 () {
-      this.loading = true
-      setTimeout(() => {
-       if (this.loading == true) {
-          if (this.qq != '' && this.qq != null ) {
-            this.num20220304 = this.getWords(txt3)
-          } else {
-            this.$message.error('小笨蛋，没有输入QQ号哦^ ^')
-          }
-        } else {
-          this.$message.error('小笨蛋，不要心急，等上一个查好了再查哦^ ^')
-        } 
-      },1000)
-    },
-    goSearch20220506 () {
-      this.loading = true
-      setTimeout(() => {
-        if (this.loading == true) {
-          if (this.qq != '' && this.qq != null ) {
-            this.num20220506 = this.getWords(txt4)
-          } else {
-            this.$message.error('小笨蛋，没有输入QQ号哦^ ^')
-          }
-        } else {
-          this.$message.error('小笨蛋，不要心急，等上一个查好了再查哦^ ^')
-        }
-      },1000)
-    },
-    goSearch202207 () {
-      this.loading = true
-      setTimeout(() => {
-        if (this.loading == true) {
-          if (this.qq != '' && this.qq != null ) {
-            this.num202207 = this.getWords(txt5)
-          } else {
-            this.$message.error('小笨蛋，没有输入QQ号哦^ ^')
-          }
-        } else {
-          this.$message.error('小笨蛋，不要心急，等上一个查好了再查哦^ ^')
-        }
-      },1000)
-    },
-    goSearch202208 () {
-      this.loading = true
-      setTimeout(() => {
-        if (this.loading == true) {
-          if (this.qq != '' && this.qq != null ) {
-            this.num202208 = this.getWords(txt6)
-          } else {
-            this.$message.error('小笨蛋，没有输入QQ号哦^ ^')
-          }
-        } else {
-          this.$message.error('小笨蛋，不要心急，等上一个查好了再查哦^ ^')
-        }
-      },1000)
-    },
-    goSearch202209 () {
-      this.loading = true
-      setTimeout(() => {
-        if (this.loading == true) {
-          if (this.qq != '' && this.qq != null ) {
-            this.num202209 = this.getWords(txt7)
-          } else {
-            this.$message.error('小笨蛋，没有输入QQ号哦^ ^')
-          }
-        } else {
-          this.$message.error('小笨蛋，不要心急，等上一个查好了再查哦^ ^')
-        }
-      },1000)
-    },
-    goSearch202210 () {
-      this.loading = true
-      setTimeout(() => {
-        if (this.loading == true) {
-          if (this.qq != '' && this.qq != null ) {
-            this.num202210 = this.getWords(txt8)
-          } else {
-            this.$message.error('小笨蛋，没有输入QQ号哦^ ^')
-          }
-        } else {
-          this.$message.error('小笨蛋，不要心急，等上一个查好了再查哦^ ^')
-        }
-      },1000)
-    },
     sum () {
-      this.total = this.num2021 + this.num20220102 + this.num20220304 + this.num20220506 + this.num202207 + this.num202208 + this.num202209 + this.num202210
+      this.total = this.num20230408
     },
     getWords (text, num) {
       let qq = this.qq
@@ -266,15 +97,13 @@ export default {
         var val = text
         var data = []
         for(var k = 0; k < val.length; k++) {
-            var nane2020 = val.indexOf("2020-",k); // 从0开始搜索
-            var nane = val.indexOf("2021-",k); // 从0开始搜索
-            var nane2022 = val.indexOf("2022-",k); // 从0开始搜索
-            if(nane === -1 && nane2022 === -1 && nane2020){ // 没有找到，退出循环
+            var nane = val.indexOf("2023-",k); // 从0开始搜索
+            if(nane === -1){ // 没有找到，退出循环
                 // debugger
             break;
             } else {
                 // debugger
-                const txt = nane === -1 ? (nane2020 === -1 ? nane2022 : nane2020) : nane
+                const txt = nane
                 data.push(txt);
                 k+=1;
             }

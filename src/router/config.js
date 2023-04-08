@@ -131,11 +131,11 @@ const options = {
           },
           component: PageView,
           children: [
-            // {
-            //   path: 'words',
-            //   name: '查字数',
-            //   component: () => import('@/pages/tool/words'),
-            // },
+            {
+              path: 'words',
+              name: '查字数',
+              component: () => import('@/pages/tool/words'),
+            },
           ]
         },
         // {

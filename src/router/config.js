@@ -63,45 +63,15 @@ const options = {
           component: PageView,
           children: [
             {
-              path: 'map',
-              name: '戏录第一部分(最初-2022.3)',
-              component: () => import('@/pages/record/starMap'),
-            },
-            {
-              path: 'map414',
-              name: '戏录第二部分(2022.4-2022.7.31)',
-              component: () => import('@/pages/record/starMap414'),
-            },
-            {
-              path: 'map731',
-              name: '戏录第三部分(2022.7.31-？)',
-              component: () => import('@/pages/record/starMap1017'),
-            },
-            {
-              path: 'xingdong',
-              name: '行动编号20211028',
-              component: () => import('@/pages/record/xingdong'),
-            },
-            {
-              path: 'yuesheng',
-              name: '月升之战',
+              path: 'record20230408',
+              name: '戏录20230408',
               component: () => import('@/pages/record/yuesheng'),
-            },
-            {
-              path: 'wugui',
-              name: '无归旅途',
-              component: () => import('@/pages/record/wugui'),
-            },
-            {
-              path: 'liulangang',
-              name: '流岚港战事',
-              component: () => import('@/pages/record/liulangang'),
             },
           ]
         },
         {
           path: 'story',
-          name: '你的故事',
+          name: '按tag(TBD)',
           meta: {
             icon: 'form',
             page: {
@@ -110,49 +80,49 @@ const options = {
           },
           component: PageView,
           children: [
-            {
-              path: 'rose',
-              name: '少年与玫瑰[奥多芬斯]',
-              component: () => import('@/pages/story/rose'),
-            },
-            {
-              path: 'gold',
-              name: '金沙[Armor 诺维尔 加兰]',
-              component: () => import('@/pages/story/gold'),
-            },
-            {
-              path: 'training',
-              name: '特殊训练[天兵]',
-              component: () => import('@/pages/story/training'),
-            },
+            // {
+            //   path: 'rose',
+            //   name: '少年与玫瑰[奥多芬斯]',
+            //   component: () => import('@/pages/story/rose'),
+            // },
+            // {
+            //   path: 'gold',
+            //   name: '金沙[Armor 诺维尔 加兰]',
+            //   component: () => import('@/pages/story/gold'),
+            // },
+            // {
+            //   path: 'training',
+            //   name: '特殊训练[天兵]',
+            //   component: () => import('@/pages/story/training'),
+            // },
           ]
         },
-        {
-          path: 'map',
-          name: '星海旅行指南',
-          meta: {
-            icon: 'form',
-            page: {
-              cacheAble: false
-            }
-          },
-          component: PageView,
-          children: [
-            {
-              path: 'map',
-              name: '星图',
-              component: () => import('@/pages/map/starMap'),
-            },
-            {
-              path: 'enjoy',
-              name: '旅行实拍日记',
-              component: () => import('@/pages/map/enjoy'),
-            },
-          ]
-        },
+        // {
+        //   path: 'map',
+        //   name: '地下城旅行指南',
+        //   meta: {
+        //     icon: 'form',
+        //     page: {
+        //       cacheAble: false
+        //     }
+        //   },
+        //   component: PageView,
+        //   children: [
+        //     {
+        //       path: 'map',
+        //       name: '星图',
+        //       component: () => import('@/pages/map/starMap'),
+        //     },
+        //     {
+        //       path: 'enjoy',
+        //       name: '旅行实拍日记',
+        //       component: () => import('@/pages/map/enjoy'),
+        //     },
+        //   ]
+        // },
         {
           path: 'tool',
-          name: '工具',
+          name: '工具(TBD)',
           meta: {
             icon: 'form',
             page: {
@@ -161,11 +131,11 @@ const options = {
           },
           component: PageView,
           children: [
-            {
-              path: 'words',
-              name: '查字数',
-              component: () => import('@/pages/tool/words'),
-            },
+            // {
+            //   path: 'words',
+            //   name: '查字数',
+            //   component: () => import('@/pages/tool/words'),
+            // },
           ]
         },
         // {
